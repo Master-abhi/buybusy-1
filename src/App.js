@@ -1,23 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import Home from "./Components/Home"
+import NavBar from "./Components/Navbar";
+import Cart from "./Components/Cart";
+import Orders from './Components/Orders';
+import LogIn from './Components/Login';
+import SignUp from './Components/SignUp';
+import CustomItemContext from "./context";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 function App() {
+
+  const router = createBrowserRouter([
+    {path:"/",
+    element: <NavBar/>,
+    children: [
+    {index: true, element: <Home/> },
+    {path: "/cart", element: <Cart/>},
+    {path: "/orders", element: <Orders/>},
+    {path: "/login", element: <LogIn/>},
+    {path: "/signup", element: <SignUp/>},
+    ]
+  }
+  ])
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <CustomItemContext>
+      {/* <NavBar/>
+      <Home/> */}
+      <RouterProvider router={router}/>
+      </CustomItemContext>
     </div>
   );
 }

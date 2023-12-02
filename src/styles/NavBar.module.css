@@ -1,0 +1,55 @@
+.navContainer{
+    height: 70px;
+    margin-top: 0;
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.logo{
+    margin-left: 10px;
+
+}
+
+.linkArea{
+    display: flex;
+    align-items: center;
+    /* flex-direction: column; */
+    margin-right: 20px;
+    color: brown;
+
+}
+
+.home{
+    margin: 0px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.orders{
+    margin: 0px 20px;
+    display: flex;
+    align-items: center;
+}
+.cart{
+    margin: 0px 20px;
+    display: flex;
+    align-items: center;
+}
+.logInOut{
+    margin: 0px 20px;
+    display: flex;
+    align-items: center;
+}
+
+img{
+    height: 30px;
+    margin: 5px;
+}
+
+a{
+    text-decoration: none;
+    color: brown;
+}
