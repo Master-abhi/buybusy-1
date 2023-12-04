@@ -10,7 +10,7 @@ const NavBar = ()=>{
     return(
         <>
         <div className={styles.navContainer}>
-            <div className={styles.logo}><h3>BuyBusy</h3></div>
+            <div className={styles.logo}><Link to="/"><h3>BuyBusy</h3></Link></div>
             <div className={styles.linkArea}>
                 <Link to="/">
                 <div className={styles.home}> 
@@ -23,9 +23,9 @@ const NavBar = ()=>{
                     </Link>
                     <Link to="/cart">
                     {logIn? <div className={styles.cart} onClick={showCart}>
-                    <img src="https://cdn-icons-png.flaticon.com/128/2331/2331970.png"/>Go to Cart</div> : null }
+                    <img src="https://cdn-icons-png.flaticon.com/128/2331/2331970.png"/>My Cart</div> : null }
                     </Link>
-                
+
                 <div className={styles.logInout}>{logIn? <p onClick={()=> logOut()}>Log out</p>: <Link to="/login">Log in</Link>}</div>
             </div>
 

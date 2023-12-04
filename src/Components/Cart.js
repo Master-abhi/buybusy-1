@@ -45,7 +45,7 @@ const Home = ()=>{
             }
             </div>
         </div> :
-        <Link to="/logIn"><h1>Log in first.</h1></Link>
+        document.location.href = "http://localhost:3000/"
         }
         
         </>

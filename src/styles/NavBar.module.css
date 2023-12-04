@@ -1,7 +1,7 @@
 .navContainer{
     height: 70px;
     margin-top: 0;
-    background-color: aqua;
+    background-color: rgb(45, 128, 252);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -9,8 +9,8 @@
 }
 
 .logo{
-    margin-left: 10px;
-
+    margin-left: 20px;
+    color: white;
 }
 
 .linkArea{
@@ -18,7 +18,9 @@
     align-items: center;
     /* flex-direction: column; */
     margin-right: 20px;
-    color: brown;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+
 
 }
 
@@ -39,7 +41,7 @@
     align-items: center;
 }
 .logInOut{
-    margin: 0px 20px;
+    margin: 20px;
     display: flex;
     align-items: center;
 }
@@ -51,5 +53,5 @@ img{
 
 a{
     text-decoration: none;
-    color: brown;
+    color: rgb(255, 255, 255);
 }

@@ -16,7 +16,9 @@ function Orders() {
 
             <div className={styles.orderConatainer}>
                 {onPurchase.map((o, orderIndex) => (
-                    <React.Fragment key={orderIndex} className={styles.orderConatainer}>
+                    
+                    <React.Fragment key={orderIndex} >
+                        <div className={styles.orderarea}>
                         <h2>Date - {o.date}</h2>
                         <table>
                             <thead>
@@ -40,9 +42,12 @@ function Orders() {
                                 ))}
                             </tbody>
                         </table>
+                       
+                        </div>
                         <br/>
                         <br/>
                     </React.Fragment>
+                    
                 ))}
             </div>
             </>
